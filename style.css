@@ -46,7 +46,7 @@ footer {
   float: right;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1220px) {
   .left,
   .right {
     float: none;     /* <-- This is critical */
