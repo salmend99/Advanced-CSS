@@ -1,0 +1,46 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+
+}
+.main {
+  display: inline-block;
+  flex: 1;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2
+{
+  font-size: 50px;
+}
+
+
+footer {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+
+.tile-image {
+  width: 500px; /* or whatever size you want */
+  height: auto; /* keeps the image’s original proportions */
+  border-radius: 10px; /* optional: makes corners rounded */
+  float: left;
+  margin-right: 40px; /* space between image and text */
+}
+
+.left {
+  width: 45%;
+  float: left;
+  margin-right: 10%;
+}
+
+.right {
+  width: 45%;
+  float: right;
+}
