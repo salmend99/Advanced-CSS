@@ -4,20 +4,21 @@ body {
   background-color: #faf9f6;
   display: flex;
   flex-direction: column;
-
+  min-height: 95vh;
 }
+
 .main {
-  display: inline-block;
+  
   flex: 1;
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 5rem;
 }
 
 h2
 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 
@@ -27,20 +28,52 @@ footer {
 }
 
 .tile-image {
-  width: 500px; /* or whatever size you want */
-  height: auto; /* keeps the image’s original proportions */
-  border-radius: 10px; /* optional: makes corners rounded */
+
+  height: 400px; /* keeps the image’s original proportions */
   float: left;
   margin-right: 40px; /* space between image and text */
 }
 
-.left {
+.card {
   width: 45%;
+}
+
+.left {
   float: left;
-  margin-right: 10%;
 }
 
 .right {
-  width: 45%;
   float: right;
+}
+
+@media (max-width: 1500px) {
+  .left,
+  .right {
+    float: none;     /* <-- This is critical */
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;}
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
 }
